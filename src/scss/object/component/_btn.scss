@@ -1,0 +1,103 @@
+@use '../../foundation/function/index' as *;
+
+.bl_commonCtaBtnContainer_btn {
+    display: block;
+    width: 100%;
+    background-color: var(--ctaYellow);
+    border-radius: vwmin(100, pc);
+    line-height: 1.5;
+    padding-block: vwmin(8, pc);
+    text-align: center;
+    font-size: vwmin(16, pc);
+    transition: all .3s ease;
+    font-weight: 600;
+    color: var(--baseFontColor);
+    text-decoration: none;
+    box-sizing: border-box;
+
+    @media (hover : hover) {
+        &:hover {
+            transition: all .3s ease;
+            color: #fff;
+        }
+    }
+
+    @include underTB {
+        border-radius: vwmin(100, sp);
+        padding-block: vwmin(8, sp);
+        font-size: vwmin(16, sp);
+    }
+}
+
+
+.el_commonMoreBtn {
+    cursor: pointer;
+    display: block;
+    margin-inline: auto;
+    color: var(--green);
+    font-weight: 600;
+    font-size: vwmin(16, pc);
+    padding-inline: vwmin(16, pc);
+    padding-block: vwmin(16, pc);
+    border: vwmin(2, pc) solid var(--green);
+    width: 100%;
+    max-width: vwmin(280, pc);
+    margin-inline: auto;
+    background-color: transparent;
+    border-radius: 100px;
+    transition: all .3s ease;
+
+    @include underTB {
+        padding-inline: vwmin(16, sp);
+        padding-block: vwmin(16, sp);
+        border: vwmin(2, sp) solid var(--green);
+        max-width: vwmin(230, sp);
+        font-size: vwmin(14, sp);
+    }
+
+
+    @media (hover : hover) {
+        &:hover {
+            opacity: .5;
+            transition: all .3s ease;
+        }
+    }
+}
+
+
+.el_commonAllViewBtn {
+    display: block;
+    max-width: vwmin(280, pc);
+    width: 100%;
+    border-radius: 100px;
+    border: vwmin(2, pc) solid #333;
+    text-align: center;
+    font-size: vwmin(16, pc);
+    font-weight: 600;
+    padding-block: vwmin(10, pc);
+    padding-bottom: vwmin(12, pc);
+    padding-inline: vwmin(32, pc);
+    margin-top: vwmin(48, pc);
+    margin-inline: auto;
+    transition: all .3s ease;
+    color: var(--baseFontColor);
+    text-decoration: none;
+    box-sizing: border-box;
+
+    @include underTB {      
+        max-width: vwmin(230, sp);
+        margin-top: vwmin(48, sp);
+        padding-inline: vwmin(32, sp);
+        padding-block: vwmin(10, sp);
+        padding-bottom: vwmin(12, sp);
+        font-size: vwmin(16, sp);
+    }
+
+
+    @media (hover : hover) {
+        &:hover {
+            opacity: .5;
+            transition: all .3s ease;
+        }
+    }
+}

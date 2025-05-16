@@ -1,0 +1,31 @@
+@use '../function/index' as *;
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--baseFontColor) !important;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  font-size: vwmin(16, pc);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-break: strict;
+  color: var(--black-100);
+  letter-spacing: 0.02em;
+
+  @include underTB {
+    font-size: vwmin(16, sp);
+  }
+}
+
+.ly_main{
+  padding-top: vwmin(128, pc);
+
+  @include underTB {
+    padding-top: vwmin(80, sp);
+
+  }
+}
+
